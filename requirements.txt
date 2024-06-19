@@ -1,0 +1,6 @@
+nano requirements.txt
+Flask
+pytesseract
+pdf2image
+markdown
+gunicorn
