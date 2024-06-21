@@ -9,7 +9,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
     const formData = new FormData();
     formData.append('pdf_file', fileInput.files[0]);
 
-    const response = await fetch('https://your-colab-backend-url', {
+    const response = await fetch('https://7a40-104-154-218-253.ngrok-free.app', {  // ここにngrokのパブリックURLを設定
         method: 'POST',
         body: formData
     });
