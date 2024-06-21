@@ -10,9 +10,12 @@ document.getElementById('upload-form').addEventListener('submit', async function
     formData.append('pdf_file', fileInput.files[0]);
 
     try {
-        const response = await fetch('https://7a40-104-154-218-253.ngrok-free.app', {  // ここにngrokのパブリックURLを設定
+        const response = await fetch('https://54ac-104-154-218-253.ngrok-free.app/', {  // ここにngrokのパブリックURLを設定
             method: 'POST',
-            body: formData
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
         });
 
         if (!response.ok) {
